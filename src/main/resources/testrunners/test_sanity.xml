@@ -3,15 +3,15 @@
 <suite thread-count="4" parallel="tests" name="Sanity">
 	<parameter name="env" value="qa"></parameter>
 	<listeners>
-		<listener class-name="com.qa.listeners.ExtentReportListener" />
-		<listener class-name="com.qa.listeners.TestAllureListener" />
-		<listener class-name="com.qa.listeners.AnnotationTransformer" />
+		<listener class-name="com.sm.RedBus.listeners.ExtentReport" />
+		<listener class-name="com.sm.RedBus.listeners.AllureReportListner" />
+		<listener class-name="com.sm.RedBus.listeners.AnnotationTransformer" />
 	</listeners>
-	<test name=" ">
+	<test name="HomePage Test ">
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="115.0" />
 		<classes>
-			<class name=" " />
+			<class name="com.sm.RedBus.tests.HomePageTest" />
 		</classes>
 	</test>
 </suite> <!-- Sanity -->

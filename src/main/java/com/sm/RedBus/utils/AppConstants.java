@@ -5,7 +5,7 @@ import java.util.List;
 
 public class AppConstants {
 	public static final String LOGIN_PAGE_TITLE_VALUE = "Account Login";
-	public static final String HOME_PAGE_TITLE_VALUE = "Red Bus";
+	public static final String HOME_PAGE_TITLE_VALUE = "Online Bus Ticket Booking, Book AC Volvo Bus Tickets - redBus";
 
 	public static final String LOGIN_PAGE_URL_FRACTION_VALUE = "route=account/login";
 	

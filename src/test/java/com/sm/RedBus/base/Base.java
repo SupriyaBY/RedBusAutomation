@@ -7,11 +7,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
-
+import com.sm.RedBus.factory.DriverFactory;
 import com.sm.RedBus.pages.HomePage;
 import com.sm.RedBus.pages.LoginPage;
 
-import com.sm.RedBus.factory.DriverFactory;
+
 
 public class Base {
 
@@ -34,7 +34,8 @@ public class Base {
 		}
 		driver = df.initDriver(prop);
 
-		loginPage = new LoginPage(driver);
+		hmPage = new HomePage(driver);
+		//loginPage = new LoginPage(driver);
 		softAssert = new SoftAssert();
 	}
 
