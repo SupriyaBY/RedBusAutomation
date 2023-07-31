@@ -21,7 +21,11 @@ public class HomePageTest extends Base{
 		 
 		
 	}
-	
+//	@Test
+//	public boolean hmPageBusTkt() {
+//		Assert.assertTrue(hmPage.isbustktclickable());
+//	}
+//	
 
 
 }

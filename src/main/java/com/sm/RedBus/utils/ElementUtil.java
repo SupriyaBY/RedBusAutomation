@@ -53,7 +53,11 @@ public class ElementUtil {
 	public void doClick(By locator, int timeOut) {
 		checkElementClickable(locator, timeOut).click();
 	}
-
+//	public WebElement doClickto(By locator, int timeOut) {
+//		checkElementClickable(locator, timeOut).click();
+//		return null;
+//		
+//	}
 	public WebElement getElement(By locator, int timeOut) {
 		WebElement element = waitForElementVisible(locator, timeOut);
 		if (Boolean.parseBoolean(DriverFactory.highlightElement)) {
