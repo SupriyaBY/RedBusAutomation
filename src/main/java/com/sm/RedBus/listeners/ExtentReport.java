@@ -42,12 +42,12 @@ public class ExtentReport implements ITestListener{
 		extentReports = new ExtentReports();
 	
 		ExtentSparkReporter reporter = new ExtentSparkReporter(OUTPUT_FOLDER + FILE_NAME);
-		reporter.config().setReportName("Facebook Test Results");
+		reporter.config().setReportName("RedBus Test Results");
 		extentReports.attachReporter(reporter);
 		//extentReports.setSystemInfo("System", "MAC");
 		extentReports.setSystemInfo("Author", "Supriya yadav");
 		extentReports.setSystemInfo("Build#", "1.1");
-		extentReports.setSystemInfo("Team", "Facebook QA Team");
+		extentReports.setSystemInfo("Team", "RedBus SolutionMakers Team");
 		//extentReports.setSystemInfo("Customer Name", "NAL");
 	//	extentReports.setReportUsesManualConfiguration(true); // Enable manual configuration
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Sanity]" guice-stage="DEVELOPMENT">
+  <parameter name="env" value="qa"/>
+  <listeners>
+    <listener class-name="com.sm.RedBus.listeners.ExtentReport"/>
+    <listener class-name="com.sm.RedBus.listeners.AllureReportListner"/>
+    <listener class-name="com.sm.RedBus.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="4" parallel="tests" name="HomePage Test (failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserversion" value="115.0"/>
+    <classes>
+      <class name="com.sm.RedBus.tests.HomePageTest">
+        <methods>
+          <include name="hmPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.sm.RedBus.tests.HomePageTest -->
+    </classes>
+  </test> <!-- HomePage Test (failed) -->
+</suite> <!-- Failed suite [Sanity] -->
