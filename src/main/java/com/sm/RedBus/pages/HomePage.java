@@ -1,5 +1,7 @@
 package com.sm.RedBus.pages;
 
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +12,7 @@ import com.sm.RedBus.utils.ElementUtil;
 public class HomePage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	Properties prop = new Properties();
 
 	// 1. const. of the page class
 	public HomePage(WebDriver driver) {
@@ -37,30 +40,43 @@ public class HomePage {
 		return eleUtil.checkElementIsDisplayed(logo);
 	}
 
-	public WebElement isbustktclickable() {
-		return eleUtil.checkElementClickable(bustkt, AppConstants.SHORT_DEFAULT_WAIT);
+	public void isbustktclickable() {
+		eleUtil.checkElementClickable(bustkt, AppConstants.SHORT_DEFAULT_WAIT);
 
 	}
 
-	public WebElement iscabrentalclickable() {
-		return eleUtil.checkElementClickable(cabrental, AppConstants.SHORT_DEFAULT_WAIT);
+	public void iscabrentalclickable() {
+		eleUtil.checkElementClickable(cabrental, AppConstants.SHORT_DEFAULT_WAIT);
 
 	}
 
-	public WebElement istraintktclickable() {
-		return eleUtil.checkElementClickable(traintkt, AppConstants.SHORT_DEFAULT_WAIT);
+	public void istraintktclickable() {
+		eleUtil.checkElementClickable(traintkt, AppConstants.SHORT_DEFAULT_WAIT);
 
 	}
 
-	public WebElement ishelpbtnclickable() {
-		return eleUtil.checkElementClickable(help, AppConstants.SHORT_DEFAULT_WAIT);
+	public void ishelpbtnclickable() {
+		eleUtil.checkElementClickable(help, AppConstants.SHORT_DEFAULT_WAIT);
 
 	}
 
-	public WebElement isaccountclickable() {
-		return eleUtil.checkElementClickable(account, AppConstants.SHORT_DEFAULT_WAIT);
+	public void isaccountclickable() {
+		eleUtil.checkElementClickable(account, AppConstants.SHORT_DEFAULT_WAIT);
 
 	}
+
+	public boolean isfromtextboxdisplay() {
+	return	eleUtil.checkElementIsDisplayed(from);
+	}
+	
+	public boolean istotextboxdisplay() {
+		return eleUtil.checkElementIsDisplayed(to);
+	}
+	
+	public boolean issearchbtndisplay() {
+		return eleUtil.checkElementIsDisplayed(search);
+	}
+	
 //		public boolean isMyAccountLinkExist() {
 //			return eleUtil.checkElementIsDisplayed(myAccount);
 //		}
