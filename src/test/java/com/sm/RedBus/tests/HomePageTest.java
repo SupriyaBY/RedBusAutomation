@@ -66,6 +66,35 @@ public class HomePageTest extends Base {
 	@Test(priority = 10)
 	public void hmPageSearchBtnTest() {
 		Assert.assertTrue(hmPage.issearchbtndisplay());
+	}	
+	
+		@Test(priority = 11)
+	public void hmPageAboutUsTest() {
+			hmPage.isaboutusclickable();
+		}
+		
+		 @Test(priority =12)
+	     public void hmPageContactUsTest() {
+	    	hmPage.iscontactusclickable();
+	     }
 
-	}
+     @Test(priority =13)
+     public void hmPagetermsandsconditionsTest() {
+    	 hmPage.istermconditionsclickable();
+     }
+     
+     @Test(priority =14)
+     public void hmPagefaqTest() {
+    	 hmPage.isfaqclickable();
+     }
+     
+     @Test(priority =15)
+     public void hmPageindia_siteTest() {
+    	hmPage.isindia_siteclickable();
+     }
+    
+     @Test(priority = 16)
+     public void hmPagecolombia_siteTest() {
+    	hmPage.iscolombia_siteclickable();
+     }
 }

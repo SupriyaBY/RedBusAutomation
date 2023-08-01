@@ -10,6 +10,7 @@ import org.testng.asserts.SoftAssert;
 import com.sm.RedBus.factory.DriverFactory;
 import com.sm.RedBus.pages.HomePage;
 import com.sm.RedBus.pages.LoginPage;
+import com.sm.RedBus.utils.JavaScriptUtil;
 
 
 
@@ -17,12 +18,12 @@ public class Base {
 
 	protected LoginPage loginPage;
 	protected HomePage hmPage;
-	
+	protected JavaScriptUtil jsu;
 	WebDriver driver;
 	protected DriverFactory df;
 	protected Properties prop;
 	protected SoftAssert softAssert;
-
+	
 	@Parameters({ "browser", "browserversion" })
 	@BeforeTest
 	public void setup(String browserName, String browserVersion) {
@@ -37,6 +38,7 @@ public class Base {
 		hmPage = new HomePage(driver);
 		//loginPage = new LoginPage(driver);
 		softAssert = new SoftAssert();
+		
 	}
 
 	@AfterTest
