@@ -65,7 +65,6 @@ public class HomePage {
 		eleUtil.checkElementClickable(help, AppConstants.SHORT_DEFAULT_WAIT);
 
 	}
-
 	public void isaccountclickable() {
 		eleUtil.checkElementClickable(account, AppConstants.SHORT_DEFAULT_WAIT);
 

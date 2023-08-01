@@ -72,7 +72,7 @@ public class HomePageTest extends Base {
 	public void hmPageAboutUsTest() {
 			hmPage.isaboutusclickable();
 		}
-		
+	
 		 @Test(priority =12)
 	     public void hmPageContactUsTest() {
 	    	hmPage.iscontactusclickable();
