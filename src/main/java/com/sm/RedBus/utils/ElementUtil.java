@@ -50,6 +50,12 @@ public class ElementUtil {
 		getElement(locator).click();
 	}
 
+	// added
+	public void doSelect(By locator) {
+		getElement(locator).click();
+		getElement(locator).isSelected();
+	}
+
 	public void doClick(By locator, int timeOut) {
 		checkElementClickable(locator, timeOut).click();
 	}
