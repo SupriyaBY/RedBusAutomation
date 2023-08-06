@@ -9,7 +9,9 @@ import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 import com.sm.RedBus.factory.DriverFactory;
 import com.sm.RedBus.pages.HomePage;
+import com.sm.RedBus.pages.HomePageFooter2;
 import com.sm.RedBus.pages.LoginPage;
+import com.sm.RedBus.pages.SearchPage;
 import com.sm.RedBus.utils.JavaScriptUtil;
 
 
@@ -17,6 +19,8 @@ import com.sm.RedBus.utils.JavaScriptUtil;
 public class Base {
 
 	protected LoginPage loginPage;
+	protected SearchPage srcPage ;
+	protected HomePageFooter2 ft2Page;
 	protected HomePage hmPage;
 	protected JavaScriptUtil jsu;
 	WebDriver driver;

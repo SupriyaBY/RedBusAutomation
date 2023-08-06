@@ -89,7 +89,24 @@ public class ElementUtil {
 	public boolean checkElementIsDisplayed(By locator) {
 		return getElement(locator).isDisplayed();
 	}
+	
+	
+	public  boolean checkvisibleandclickable(By locator) {
+		try {
+		WebDriverWait wait = new WebDriverWait(driver , Duration.ofSeconds(DEFAULT_TIME_OUT));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+		if(Boolean.parseBoolean(DriverFactory.highlightElement)) {
+			jsUtil.flash(element);
+		}
+		return element.isDisplayed();
+     }
+		catch(Exception e){
+			return false;
+		}
+		
+	}
 
+	
 	public String doGetAttributeValue(By locator, String attrName) {
 		return getElement(locator).getAttribute(attrName);
 	}
